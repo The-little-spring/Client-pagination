@@ -12,7 +12,6 @@ const UsePaginatedData = (pageSize) => {
     );
     const result = response.data;
     const chunkedData = _.chunk(result, pageSize);
-    console.log(chunkedData);
     setData(chunkedData);
     setLoading(false);
   };
